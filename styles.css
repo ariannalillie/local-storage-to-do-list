@@ -32,3 +32,10 @@ body {
     background-color:#055C9D;
     color: white;
 }
+
+.list {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 210px;
+}
