@@ -9,7 +9,9 @@ userInput.addEventListener("change", (event) => {
 });
 
 addButton.addEventListener("click", (event) => {
-  let li = document.createElement(toDoItem);
-  li.appendChild(document.createTextNode(`* ${toDoItem}`));
+  let li = document.createElement('list-item');
+  li.appendChild(document.createTextNode(toDoItem));
+  li.classList.add('list-item')
   ul.appendChild(li);
+  userInput.value= ""
 });
