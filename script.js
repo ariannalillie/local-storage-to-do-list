@@ -10,10 +10,18 @@ userInput.addEventListener("change", (event) => {
 
 addButton.addEventListener("click", (event) => {
 
-  // Create list item and add toDoItem as the text
-  let li = document.createElement('list-item');
+  // Create list item
+  let li = document.createElement('li');
+
+  // Add toDoListItem text to list item created above
   li.appendChild(document.createTextNode(toDoItem));
+
+  // Add class name 'list-item' to list item
   li.classList.add('list-item')
+
+  // Add list item to unordered 
   ul.appendChild(li);
+
+  // Reset input box state back to empty 
   userInput.value= ""
 });
