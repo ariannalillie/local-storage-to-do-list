@@ -13,7 +13,7 @@ addButton.addEventListener("click", (event) => {
   // Create list item
   let li = document.createElement('li');
 
-  // Add toDoListItem text to list item created above
+  // Add toDoItem text to list item created above
   li.appendChild(document.createTextNode(toDoItem));
 
   // Add class name 'list-item' to list item
@@ -24,4 +24,10 @@ addButton.addEventListener("click", (event) => {
 
   // Reset input box state back to empty 
   userInput.value= ""
+  // toDoItem = ""
 });
+
+// Edge cases to think about:
+// 'ToDoItem' still has a value (try clicking add button after user input field is clear)
+// Once the above is handled, our value is blank but we still keep creating li's if we click add
+
